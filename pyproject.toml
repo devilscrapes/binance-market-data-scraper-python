@@ -1,0 +1,17 @@
+[project]
+name = "binance-market-data-scraper-python"
+version = "1.0.0"
+description = "Python example for running the Binance Market Data Scraper — Ticker & Klines on Apify."
+requires-python = ">=3.11"
+dependencies = ["apify-client==3.2.1"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# CI runs plain `pytest`, which (unlike `python -m pytest`) does not put the repo root on sys.path.
+pythonpath = ["."]

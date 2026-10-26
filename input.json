@@ -1,0 +1,14 @@
+{
+  "symbols": [
+    "BTCUSDT"
+  ],
+  "dataTypes": [
+    "ticker",
+    "klines"
+  ],
+  "interval": "1d",
+  "klinesLimit": 9,
+  "proxyConfiguration": {
+    "useApifyProxy": true
+  }
+}
